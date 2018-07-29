@@ -1,0 +1,55 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/border"
+    android:orientation="vertical"
+    android:padding="@dimen/widget_margin">
+
+    <TextView
+        android:id="@+id/text_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginBottom="@dimen/material_bottom_nav_bar_action_label_padding_bottom"
+        android:layout_marginLeft="@dimen/material_bottom_nav_bar_action_label_padding_bottom"
+        android:layout_marginRight="@dimen/material_bottom_nav_bar_action_label_padding_bottom"
+        android:layout_marginTop="5dp"
+        android:textAlignment="center"
+        android:textColor="@color/cardview_dark_background"
+        android:textSize="22sp"
+        android:textStyle="bold"
+        tools:text="Cheec Cake" />
+
+    <Button
+        android:id="@+id/divider"
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:layout_below="@id/text_name"
+        android:background="@color/colorPrimaryDark" />
+
+    <TextView
+        android:id="@+id/text_fixed_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/divider"
+        android:layout_margin="@dimen/material_bottom_nav_bar_action_label_padding_bottom"
+        android:text="@string/ingridents"
+        android:textAlignment="center"
+        android:textColor="@color/cardview_dark_background"
+        android:textSize="22sp"
+        android:textStyle="bold" />
+
+    <Button
+        android:id="@+id/divide2"
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:background="@color/colorPrimaryDark" />
+
+    <ListView
+        android:id="@+id/list_itemes_widget"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/material_color_white"></ListView>
+
+</LinearLayout>

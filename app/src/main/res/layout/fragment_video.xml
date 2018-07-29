@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.exoplayer2.ui.PlayerView
+    android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    android:layout_margin="@dimen/material_stepper_step_active_title_margin_bottom"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/video_view"
+    xmlns:app="http://schemas.android.com/apk/res-auto" />

@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".VideoActivity">
+
+    <FrameLayout
+        android:id="@+id/video_frame"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="3"></FrameLayout>
+
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_margin="@dimen/material_stepper_step_active_title_margin_bottom"
+        android:layout_weight="2"
+        android:elevation="4dp"
+        app:cardCornerRadius="5dp">
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <TextView xmlns:android="http://schemas.android.com/apk/res/android"
+                android:id="@+id/txt_video"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/material_color_yellow_800"
+                android:padding="@dimen/material_stepper_step_active_title_margin_bottom"
+                android:text="- One Cupe"
+                android:textAppearance="@style/TextAppearance.AppCompat.Small"
+                android:textColor="@color/cardview_dark_background" />
+        </ScrollView>
+
+
+    </android.support.v7.widget.CardView>
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/material_stepper_step_active_title_margin_bottom"
+        android:elevation="4dp"
+        app:cardCornerRadius="5dp">
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_weight="1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <Button
+                android:onClick="BackFun"
+                android:layout_weight="1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Back"
+                android:background="@color/material_color_white"
+                android:textColor="@color/colorPrimaryDark"/>
+            <View
+                android:layout_width="3dp"
+                android:layout_height="match_parent"
+                android:background="@color/colorPrimary"
+                />
+            <Button
+                android:onClick="NextFun"
+                android:layout_weight="1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Next"
+                android:background="@color/material_color_white"
+                android:textColor="@color/colorPrimaryDark"/>
+        </LinearLayout>
+
+
+    </android.support.v7.widget.CardView>
+
+</LinearLayout>

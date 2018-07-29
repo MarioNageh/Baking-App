@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <android.support.v7.widget.RecyclerView xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/recylerview_mainfragment"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+    </android.support.v7.widget.RecyclerView>
+    <ProgressBar
+        android:visibility="gone"
+        android:id="@+id/pro_bar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"/>
+    <ImageView
+        android:visibility="gone"
+        android:id="@+id/no_internt_connection"
+        android:layout_width="match_parent"
+        android:src="@drawable/nointer"
+        android:background="@color/material_color_white"
+        android:layout_height="match_parent">
+    </ImageView>
+</RelativeLayout>
