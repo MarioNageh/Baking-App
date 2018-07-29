@@ -130,6 +130,7 @@ public class VideoFragment extends Fragment {
             video_Postion = mSimpleExoPlayer.getCurrentPosition();
             Log.e("Mario", video_Postion + "");
         }
+        releasePlayer();
     }
 
     @Override
@@ -141,7 +142,7 @@ public class VideoFragment extends Fragment {
     @Override
     public void onDestroy() {
         super.onDestroy();
-        releasePlayer();
+
     }
 
 
