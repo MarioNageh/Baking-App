@@ -161,7 +161,7 @@ public class VideoFragment extends Fragment {
     public void onSaveInstanceState(@NonNull Bundle outState) {
         outState.putLong(VIDEO_POSITION, video_Postion);
       outState.putBoolean(VIDEO_STATUE, State);
-        Log.e("Mario", mSimpleExoPlayer.isPlayingAd() + "");
+//        Log.e("Mario", mSimpleExoPlayer.isPlayingAd() + "");
 
     }
 }
